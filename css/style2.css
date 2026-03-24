@@ -1,0 +1,259 @@
+.enorme{
+animation-name: gros;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-play-state: paused;
+  filter :drop-shadow(50px 20px 16px rgb(60, 255, 0));
+  font-family : "CoasterSans-Regular.woff";
+  position: relative;
+  top: -10000px;
+  left: 100px;
+  background-color : rgba(0, 238, 255, 0.534);
+	color : rgb(255, 255, 255);
+  width: 100px;
+  height: 5000px;
+  margin-bottom : 15px;
+  font-size: 50px;
+}
+.enorme:hover{
+    animation-name: gros;
+    animation-play-state:running;
+    font-size: 100px;
+}
+@keyframes gros{
+  from{
+  color : rgb(255, 255, 255);
+  font-size: 50px;
+  }
+  to{
+  font-size: 1000px;
+  color : rgbrgb(0, 132, 255)
+  }
+}
+.grand{
+animation-name: wtf;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-play-state: paused;
+  background-color: rgba(0, 0, 255, 0.573);
+  top: -1000px;
+  bottom : 10000px;
+	font-family : "Wabikom.ttf";
+  font-size: 550px;
+  width: 5000px;
+  height: 100px;
+}
+.grand:hover{
+    animation-name: wtf;
+    animation-play-state:running;
+}
+@keyframes wtf{
+  from{
+    /* transform: translateY(-100px, 100px); */
+  background-color: rgba(0, 0, 255, 0.573);
+color :rgba(255, 0, 238, 0.429);
+  }
+  to{
+    /* transform: translateY(100px, 500px); */
+  background-color: rgba(255, 111, 0, 0.573);
+color: rgb(29, 255, 255);
+  }
+}
+
+
+.petit{
+animation-name: tremb;
+animation-duration: 5s; /*durée totale d'une itération de l'animation en seconde*/
+animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+animation-play-state:paused;
+
+top: 0;
+    background-color: rgba(0, 255, 170, 0.342);
+    width: 50px;
+    height: 5000px;
+    font-family : "CoasterSans-Regular.woff";
+    font-size: 50px;
+    color :rgb(183, 0, 255)
+}
+.petit:hover{
+color: rgb(255, 162, 0);
+animation-name: tremb;
+animation-play-state:running;
+filter :drop-shadow(50px 60px 16px rgb(246, 255, 0))
+}
+@keyframes tremb {
+  from {
+    transform: rotate(-30deg);
+  }
+
+  to {
+    transform: rotate(60deg);
+  }
+}
+
+
+.moderer{
+  animation-name: coco; /*renseigner ici le nom de l'anim*/
+  animation-duration: 1s; /*durée totale d'une itération de l'animation en seconde*/
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+  animation-delay : 1s;/*faire démarer une animation un peu en retard*/
+  animation-play-state: paused;
+
+    background-color: rgba(255, 234, 0, 0.342);
+    width: 5000px;
+    height: 5000px;
+    filter : blur(5000);
+    font-family : "Cling.otf";
+    font-size: 500px;
+    color :rgba(255, 0, 0, 0.826)
+}
+.moderer:hover{
+animation-name: coco;
+animation-play-state:running;
+}
+@keyframes coco {
+  from {
+    translate: 1000px 1000px;
+    scale: 100% 1;
+  }
+  to {
+    animation-play-state: running;
+    translate: -10px -10px;
+    scale: 100% 1;
+  }
+}
+
+.moyen{
+  animation-name: papa; /*renseigner ici le nom de l'anim*/
+  animation-duration: 1s; /*durée totale d'une itération de l'animation en seconde*/
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+  animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+  animation-play-state: paused;
+    background-color: rgb(255, 234, 0);
+    width: 100px;
+    height: 5000px;
+    font-family : "modular.ttf";
+}
+.moyen:hover{
+color: rgb(0, 0, 0);
+animation-name: papa;
+animation-play-state:running;
+filter :drop-shadow(50px 60px 16px rgb(255, 255, 255))
+}
+@keyframes papa {
+  from {
+    background-color: rgb(255, 234, 0);
+    width: 100px;
+    height: 5000px;
+    font-family : "modular.ttf";
+    font-size: 500px;
+    color :rgb(255, 0, 234)
+  }
+
+  to {
+    background-color: rgb(0, 255, 4);
+    width: 2000px;
+    height: 50px;
+    font-family : "CLing.otf";
+    font-size: 1000px;
+    color :rgb(255, 0, 30)
+  }
+}
+
+.flou{
+   animation-name: bleur; /*renseigner ici le nom de l'anim*/
+  animation-duration: 1s; /*durée totale d'une itération de l'animation en seconde*/
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+  animation-delay : 1s;/*faire démarer une animation un peu en retard*/
+  animation-play-state: paused;
+    width: 100px;
+    height: 5000px;
+    font-family : "0xA000-Dots-Mono.ttf";
+    filter: blur(20px);
+    color: coral;
+    font-size: 500px;
+}
+.flou:hover{
+background-color: rgb(255, 196, 0);
+animation-name: bleur;
+animation-play-state:running;
+}
+@keyframes bleur {
+  from {
+
+  }
+
+  to {
+  }
+}
+
+
+main{
+    display : none;
+}
+
+
+    @font-face {
+  font-family: "Crozet-Regular.woff"; /*choix du mot clef */
+  src: url("../crozet-te-main/crozet-te-main/webfonts/Crozet-Regular.woff");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+   @font-face {
+  font-family: "CoasterSans-Regular.woff"; /*choix du mot clef */
+  src: url("../coaster-sans/fonts/CoasterSans-Regular.woff");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+   @font-face {
+  font-family: "Cling.otf"; /*choix du mot clef */
+  src: url("../Cling/Cling.otf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+   @font-face {
+  font-family: "Wabikom.ttf"; /*choix du mot clef */
+  src: url("../Wabikom.ttf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+   @font-face {
+  font-family: "modular.ttf"; /*choix du mot clef */
+  src: url("../modular.ttf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+  @font-face {
+  font-family: "0xA000-Dots-Mono.ttf"; /*choix du mot clef */
+  src: url("../0xA000/0xA000-Dots-Mono.ttf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  width: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 100px); /*nbr + taille collones */
+  gap: 100px; /*gouttières */
+  grid-auto-rows: 100px; /*hauteurs des lignes */
+  height: -100vh;
+  overflow-x: hidden;
+}
+
+header {
+  z-index: 50;
+  position: absolute;
+  font-size: 70px;
+  font-family: 'CoasterSans-Regular.woff';
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-decoration: none;
+}

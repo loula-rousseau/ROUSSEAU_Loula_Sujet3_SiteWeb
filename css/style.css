@@ -1,0 +1,167 @@
+.liane{
+    font-size: 100px;
+    font-family : "Cling.otf";
+    filter :drop-shadow(50px 20px 16px rgb(0, 0, 0));
+    position: relative;
+    margin-top: -300px;
+    margin-left: -300px;
+    color : rgb(0, 0, 0);
+}
+
+.intro{
+    font-size: 75vw;
+    font-family : "Linea.otf";
+    filter :drop-shadow(50px 20px 16px rgb(255, 255, 255));
+    position: relative;
+    margin-top: -500px;
+    margin-left: -100px;
+    color : rgb(0, 0, 0);
+}
+
+.fourmis{
+  animation-name: fourmis;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    font-size: 100px;
+    font-family : "Ouvrieres-affamees.otf";
+    position: relative;
+    /* margin-top: -200px;
+    margin-left: -200px; */
+    color : rgb(0, 0, 0); 
+}
+@keyframes fourmis {
+  from{
+font-variation-settings: "wght" 100, "FRMT" 100;
+  }
+  to{
+font-variation-settings: "wght" 100, "FRMT" 900;
+  }
+}
+
+
+main{
+    display : none;
+}
+
+
+    @font-face {
+  font-family: "Barlow-TypoDesBois.otf"; /*choix du mot clef */
+  src: url("../Barlow-TypoDesBois/Barlow-TypoDesBois.otf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+
+   @font-face {
+  font-family: "RAMI.otf"; /*choix du mot clef */
+  src: url("../RAMI/RAMI.otf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+
+   @font-face {
+  font-family: "Ouvrieres-affamees.otf"; /*choix du mot clef */
+  src: url("../ouvrieres-main/ouvrieres-main/fonts/LesOuvrièresVariable.ttf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+
+  @font-face {
+  font-family: "Linea.otf"; /*choix du mot clef */
+  src: url("../Linea/Linea.otf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+
+   @font-face {
+  font-family: "Cling.otf"; /*choix du mot clef */
+  src: url("../typo/Cling/Cling.otf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+
+
+
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 30px); /*nbr + taille collones */
+  gap: 0px; /*gouttières */
+  grid-auto-rows: 1px; /*hauteurs des lignes */
+  overflow: hidden;
+}
+
+
+header {
+  z-index: 50;
+  position: absolute;
+  font-size: 150px;
+  font-family: 'RAMI.otf';
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+a{
+  color: rgb(0, 0, 0);
+  text-shadow:
+    0 0 20px rgb(255, 255, 255),
+    0 0 40px rgb(255, 255, 255),
+    0 0 60px rgb(255, 255, 255),
+    0 0 80px rgb(255, 255, 255),
+    0 0 100px rgb(255, 255, 255),
+    0 0 120px rgb(255, 255, 255),
+    0 0 140px rgb(255, 255, 255),
+    0 0 160px rgb(255, 255, 255),
+    0 0 180px rgb(255, 255, 255),
+    0 0 200px rgb(255, 255, 255),
+    0 0 220px rgb(255, 255, 255),
+    0 0 240px rgb(255, 255, 255),
+    0 0 260px rgb(255, 255, 255),
+    0 0 280px rgb(255, 255, 255),
+    0 0 300px rgb(255, 255, 255),
+    0 0 320px rgb(255, 255, 255),
+    0 0 340px rgb(255, 255, 255),
+    0 0 360px rgb(255, 255, 255),
+    0 0 380px rgb(255, 255, 255),
+    0 0 400px rgb(255, 255, 255),
+    0 0 420px rgb(255, 255, 255),
+    0 0 440px rgb(255, 255, 255),
+    0 0 460px rgb(255, 255, 255),
+    0 0 480px rgb(255, 255, 255),
+    0 0 500px rgb(255, 255, 255),
+    0 0 520px rgb(255, 255, 255),
+    0 0 540px rgb(255, 255, 255),
+    0 0 560px rgb(255, 255, 255),
+    0 0 580px rgb(255, 255, 255),
+    0 0 600px rgb(255, 255, 255),
+    0 0 620px rgb(255, 255, 255),
+    0 0 640px rgb(255, 255, 255),
+    0 0 660px rgb(255, 255, 255),
+    0 0 680px rgb(255, 255, 255),
+    0 0 700px rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.152);
+  padding: 100px;
+  filter :drop-shadow(100px 20px 16px rgb(0, 0, 0))
+}
+
+
+p{
+  pointer-events: none;
+}
+
+#boite2{
+  /* background-color: rgb(255, 0, 0); */
+  width: 100px;
+  display: grid;
+  grid-template-columns: repeat(15, 30px); /*nbr + taille collones */
+  gap: 100px;
+  grid-auto-rows: 10px;
+}
+
+
+#boite2>header{
+  pointer-events :all !important;
+}

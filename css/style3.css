@@ -1,0 +1,167 @@
+.fond{
+  position: absolute;
+  z-index: 1;
+  font-family : "Wabikom.ttf";
+  margin-top: 100px;
+  left: -500;
+  font-size: 4vw;
+  color: rgba(255, 204, 0, 0.847);
+}
+ 
+ .grand{
+  z-index: 2;
+  animation-name: couleur; /*renseigner ici le nom de l'anim*/
+  animation-duration: 15s; /*durée totale d'une itération de l'animation en seconde*/
+  animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+  animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+  animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+  animation-delay : 1s;/*faire démarer une animation un peu en retard*/
+
+  filter: drop-shadow(50px 20px 16px rgb(221, 255, 0));
+  margin-left: 10px;
+	font-family : "0xA000-Dots-Mono.ttf";
+  font-size: 250px;
+  color :rgba(255, 166, 0, 0.568)
+}
+@keyframes couleur {
+  from {
+    translate: 500px 500px;
+    scale: 100% 1;
+  }
+  to {
+    translate: -10px -10px;
+    scale: 100% 1;
+  }
+}
+
+
+.petit{
+  z-index: 25;
+animation-name: anime; /*renseigner ici le nom de l'anim*/
+animation-duration: 1s; /*durée totale d'une itération de l'animation en seconde*/
+animation-iteration-count: infinite; /*nombre d'itération de l'animation*/
+animation-direction: alternate;/*lire l'animation dans un sens puis dans l'autre*/
+animation-fill-mode: forwards;/*si l'animation doit se terminer elle garde sa valeur finale*/
+animation-delay : 0s;/*faire démarer une animation un peu en retard*/
+animation-play-state:paused;
+
+  font-family : "Cling.otf";
+  font-size: 200px;
+  margin-left: 100px;
+  color :rgba(225, 0, 255, 0.489)
+}
+.petit:hover{
+color: rgb(255, 162, 0);
+animation-name: anime;
+animation-play-state:running;
+filter :drop-shadow(50px 60px 16px rgb(246, 255, 0))
+}
+@keyframes anime {
+  from {
+    transform: rotate(-360deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.texte{
+  z-index: 2;
+  animation-name: bulles;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 1000px;
+  font-family : "0xA000-Dots-Mono.ttf";
+  position: relative;
+  margin-top: -200px;
+  margin-right: -1000px;
+  filter: drop-shadow(50px 20px 16px rgb(225, 255, 0));
+}
+@keyframes bulles {
+  from{
+    translate: -400px -60px;
+    scale: 100% 1;
+    color : rgba(89, 0, 255, 0.702);
+  }
+  to{
+    translate: -10px 200px;
+    scale: 100% 1;
+    color : rgb(200, 0, 255);
+  }
+}
+
+main{
+    display : none;
+}
+
+
+    @font-face {
+  font-family: "Crozet-Regular.woff"; /*choix du mot clef */
+  src: url("../crozet-te-main/crozet-te-main/webfonts/Crozet-Regular.woff");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+   @font-face {
+  font-family: "Bitcount-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf"; /*choix du mot clef */
+  src: url("../Bitcount-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+   @font-face {
+  font-family: "Cling.otf"; /*choix du mot clef */
+  src: url("../Cling/Cling.otf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+  @font-face {
+  font-family: "0xA000-Dots-Mono.ttf"; /*choix du mot clef */
+  src: url("../0xA000/0xA000-Dots-Mono.ttf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+   @font-face {
+  font-family: "Wabikom.ttf"; /*choix du mot clef */
+  src: url("../Wabikom.ttf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+body {
+  background-color: rgb(242, 255, 0);
+  width: 100px;
+  display: grid;
+  grid-template-columns: repeat(10, 10px); /*nbr + taille collones */
+  gap: 10px; /*gouttières */
+  grid-auto-rows: 10px; /*hauteurs des lignes */
+  overflow: hidden;
+}
+
+header {
+  z-index:50;
+  position: absolute;
+  font-family:'Bitcount-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf';
+  width: 70vw;
+  font-size: 70px;
+  padding: 10px;
+  display: flex;
+  text-decoration: none;
+}
+
+p{
+  pointer-events: none;
+}
+
+.petit{
+  pointer-events: all;
+}
+
+
+#boite2{
+  width: 75px;
+  display: grid;
+  grid-template-columns: repeat(5, 15px); /*nbr + taille collones */
+  gap: 100px;
+  grid-auto-rows: 10px;
+}
+
+
+#boite2>header{
+  pointer-events :all !important;
+}
